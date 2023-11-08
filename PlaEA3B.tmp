@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://cd600eiyrgd2y"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_6ucdi"]
+[ext_resource type="Texture2D" uid="uid://cna5kdy2okmxk" path="res://icon.svg" id="1_h6gls"]
+[ext_resource type="Script" path="res://FiniteStateMachine.gd" id="3_nebsr"]
+[ext_resource type="Script" path="res://IdleState.gd" id="4_hgtsl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3jpg"]
+size = Vector2(129.5, 128.5)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_6ucdi")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-2, -2)
+texture = ExtResource("1_h6gls")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.25, -1.75)
+shape = SubResource("RectangleShape2D_o3jpg")
+
+[node name="FiniteStateMachine" type="Node" parent="." node_paths=PackedStringArray("state")]
+script = ExtResource("3_nebsr")
+state = NodePath("IdleState")
+
+[node name="IdleState" type="Node" parent="FiniteStateMachine" node_paths=PackedStringArray("player")]
+script = ExtResource("4_hgtsl")
+player = NodePath("../..")
