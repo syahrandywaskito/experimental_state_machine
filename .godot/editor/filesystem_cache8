@@ -1,0 +1,30 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1699499992
+Actor.tscn::PackedScene::2944125035297974818::1699488144::0::1::::<><>::res://Playable Actor Script/Actor.gd<>uid://35x30q1egptk
+icon.svg::CompressedTexture2D::5687135898293895256::1699487877::1699487877::1::::<><>::
+Main.tscn::PackedScene::3099347157519356666::1699497788::0::1::::<><>::uid://bh7fkrom2ipwk::::res://Actor.tscn
+Player.tscn::PackedScene::526589349359400706::1699487877::0::1::::<><>::res://Player Script/Player.gd<>uid://cna5kdy2okmxk
+README.md::TextFile::-1::1699487877::0::1::::<><>::
+::res://character/::1699487877
+fall.png::CompressedTexture2D::2028666786537210236::1699487877::1699487877::1::::<><>::
+idle.png::CompressedTexture2D::149352322052017991::1699487877::1699487877::1::::<><>::
+jump.png::CompressedTexture2D::6737158332694266187::1699487877::1699487877::1::::<><>::
+player_dash.png::CompressedTexture2D::3247423667181394413::1699487877::1699487877::1::::<><>::
+run.png::CompressedTexture2D::7194525718516754438::1699487877::1699487877::1::::<><>::
+::res://Playable Actor Script/::1699487877
+Actor.gd::GDScript::-1::1699487877::0::1::::PlayableActor<>CharacterBody2D<>::
+ActorStateMachine.gd::GDScript::-1::1699487877::0::1::::ActorStateMachine<>Node<>::
+Dash.gd::GDScript::-1::1699487877::0::1::::Dash<>State<>::
+Fall.gd::GDScript::-1::1699487877::0::1::::Fall<>State<>::
+Idle.gd::GDScript::-1::1699487877::0::1::::Idle<>State<>::
+Jump.gd::GDScript::-1::1699487877::0::1::::Jump<>State<>::
+Move.gd::GDScript::-1::1699487877::0::1::::Move<>State<>::
+State.gd::GDScript::-1::1699487877::0::1::::State<>Node<>::
+StateDebugLabel.gd::GDScript::-1::1699487877::0::1::::<>Label<>::
+::res://Player Script/::1699487877
+FiniteStateMachine.gd::GDScript::-1::1699487877::0::1::::FiniteStateMachine<>Node<>::
+JumpState.gd::GDScript::-1::1699487877::0::1::::JumpState<>State<>::
+MoveState.gd::GDScript::-1::1699487877::0::1::::MoveState<>State<>::
+Player.gd::GDScript::-1::1699487877::0::1::::Player<>CharacterBody2D<>::
+State.gd::GDScript::-1::1699487877::0::1::::State<>Node<>::
+StateDebugLabel.gd::GDScript::-1::1699487877::0::1::::<>Label<>::
